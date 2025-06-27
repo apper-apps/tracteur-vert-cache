@@ -1,0 +1,47 @@
+[
+  {
+    "Id": 1,
+    "listingId": "1",
+    "senderName": "Marie Dupont",
+    "senderEmail": "marie.dupont@email.com",
+    "senderPhone": "06 45 78 91 23",
+    "message": "Bonjour, je suis très intéressée par votre Husqvarna YTH 2448. Est-il possible de venir le voir ce week-end ? J'ai une pelouse de 2000m² et je cherche exactement ce type de tracteur. Pouvez-vous me dire s'il y a des frais de réparation récents ?",
+    "timestamp": "2024-01-14T15:30:00Z"
+  },
+  {
+    "Id": 2,
+    "listingId": "2",
+    "senderName": "Jean Martin",
+    "senderEmail": "jean.martin@email.com",
+    "senderPhone": "07 12 34 56 78",
+    "message": "Bonjour, votre John Deere X350 m'intéresse beaucoup. Le prix est-il négociable ? Je peux me déplacer rapidement pour le voir. Avez-vous tous les papiers et factures d'entretien ?",
+    "timestamp": "2024-01-13T10:45:00Z"
+  },
+  {
+    "Id": 3,
+    "listingId": "4",
+    "senderName": "Pierre Leroy",
+    "senderEmail": "pierre.leroy@email.com",
+    "senderPhone": "",
+    "message": "Salut, je vois que tu vends ton Craftsman T150. Il m'a l'air en super état sur les photos ! Est-ce que tu accepterais 2200€ ? Je peux venir le chercher dans la semaine si ça te va.",
+    "timestamp": "2024-01-12T18:20:00Z"
+  },
+  {
+    "Id": 4,
+    "listingId": "6",
+    "senderName": "David Moreau",
+    "senderEmail": "david.moreau@paysagiste.com",
+    "senderPhone": "06 98 76 54 32",
+    "message": "Bonjour, je suis paysagiste et votre Toro TimeCutter MX5025 m'intéresse pour mon activité. Combien d'heures a-t-il exactement ? Y a-t-il eu des réparations importantes ? Je peux me déplacer pour l'essayer.",
+    "timestamp": "2024-01-11T09:15:00Z"
+  },
+  {
+    "Id": 5,
+    "listingId": "3",
+    "senderName": "Sophie Bernard",
+    "senderEmail": "sophie.bernard@email.com",
+    "senderPhone": "06 23 45 67 89",
+    "message": "Bonjour, votre MTD à 1800€ pourrait convenir pour débuter. Les lames sont-elles en bon état ? Y a-t-il des pièces à changer prochainement ? Merci pour votre réponse.",
+    "timestamp": "2024-01-10T16:30:00Z"
+  }
+]

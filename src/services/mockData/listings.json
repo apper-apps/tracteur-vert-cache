@@ -1,0 +1,365 @@
+[
+  {
+    "Id": 1,
+    "title": "Tracteur tondeuse Husqvarna YTH 2448 - État excellent",
+    "brand": "Husqvarna",
+    "model": "YTH 2448",
+    "year": 2021,
+    "price": 3200,
+    "location": "Lyon, Rhône",
+    "distance": 15,
+    "description": "Tracteur tondeuse en excellent état, très peu utilisé. Entretien régulier effectué. Parfait pour grandes pelouses jusqu'à 2500m². Livré avec manuel d'utilisation et facture d'achat.",
+    "images": [
+      "/api/placeholder/800/600?text=Husqvarna+YTH+2448+1",
+      "/api/placeholder/800/600?text=Husqvarna+YTH+2448+2",
+      "/api/placeholder/800/600?text=Husqvarna+YTH+2448+3"
+    ],
+    "specifications": {
+      "enginePower": "24",
+      "cuttingWidth": "122",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier estampé",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Pierre Martin",
+      "email": "pierre.martin@email.com",
+      "phone": "06 12 34 56 78"
+    },
+    "postedDate": "2024-01-15T10:30:00Z",
+    "condition": "Excellent"
+  },
+  {
+    "Id": 2,
+    "title": "John Deere X350 - Parfait état, peu d'heures",
+    "brand": "John Deere",
+    "model": "X350",
+    "year": 2020,
+    "price": 4500,
+    "location": "Marseille, Bouches-du-Rhône",
+    "distance": 25,
+    "description": "Magnifique John Deere X350 avec seulement 180 heures au compteur. Moteur Kohler 20CV, transmission automatique. Idéal pour terrains jusqu'à 3000m². Révision complète effectuée.",
+    "images": [
+      "/api/placeholder/800/600?text=John+Deere+X350+1",
+      "/api/placeholder/800/600?text=John+Deere+X350+2"
+    ],
+    "specifications": {
+      "enginePower": "20",
+      "cuttingWidth": "107",
+      "fuelType": "essence",
+      "transmission": "automatique",
+      "deckType": "Acier renforcé",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Marie Dubois",
+      "email": "marie.dubois@email.com",
+      "phone": "04 91 23 45 67"
+    },
+    "postedDate": "2024-01-12T14:20:00Z",
+    "condition": "Excellent"
+  },
+  {
+    "Id": 3,
+    "title": "MTD 13AC762F700 - Bon état général",
+    "brand": "MTD",
+    "model": "13AC762F700",
+    "year": 2019,
+    "price": 1800,
+    "location": "Toulouse, Haute-Garonne",
+    "distance": 8,
+    "description": "Tracteur tondeuse MTD en bon état. Quelques traces d'usage mais fonctionne parfaitement. Idéal pour débuter avec un budget serré. Lames récemment affûtées.",
+    "images": [
+      "/api/placeholder/800/600?text=MTD+762F700+1"
+    ],
+    "specifications": {
+      "enginePower": "18",
+      "cuttingWidth": "102",
+      "fuelType": "essence",
+      "transmission": "manuelle",
+      "deckType": "Acier",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Jean-Claude Dupont",
+      "email": "jc.dupont@email.com",
+      "phone": "05 61 12 34 56"
+    },
+    "postedDate": "2024-01-10T09:15:00Z",
+    "condition": "Bon"
+  },
+  {
+    "Id": 4,
+    "title": "Craftsman T150 - Très bon état, bien entretenu",
+    "brand": "Craftsman",
+    "model": "T150",
+    "year": 2022,
+    "price": 2400,
+    "location": "Nantes, Loire-Atlantique",
+    "distance": 32,
+    "description": "Craftsman T150 acheté neuf il y a 2 ans, très peu utilisé. Toujours garé sous abri. Moteur Kohler fiable, transmission manuelle 6 vitesses. Excellent rapport qualité-prix.",
+    "images": [
+      "/api/placeholder/800/600?text=Craftsman+T150+1",
+      "/api/placeholder/800/600?text=Craftsman+T150+2",
+      "/api/placeholder/800/600?text=Craftsman+T150+3",
+      "/api/placeholder/800/600?text=Craftsman+T150+4"
+    ],
+    "specifications": {
+      "enginePower": "19",
+      "cuttingWidth": "107",
+      "fuelType": "essence",
+      "transmission": "manuelle",
+      "deckType": "Acier estampé",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Sophie Bernard",
+      "email": "sophie.bernard@email.com",
+      "phone": "02 40 12 34 56"
+    },
+    "postedDate": "2024-01-08T16:45:00Z",
+    "condition": "Très bon"
+  },
+  {
+    "Id": 5,
+    "title": "Cub Cadet XT1 LT42E - Électrique, écologique",
+    "brand": "Cub Cadet",
+    "model": "XT1 LT42E",
+    "year": 2021,
+    "price": 3800,
+    "location": "Strasbourg, Bas-Rhin",
+    "distance": 45,
+    "description": "Tracteur tondeuse électrique Cub Cadet, très silencieux et écologique. Batterie lithium-ion 48V. Parfait pour pelouses de taille moyenne. Aucun entretien moteur requis.",
+    "images": [
+      "/api/placeholder/800/600?text=Cub+Cadet+XT1+LT42E+1",
+      "/api/placeholder/800/600?text=Cub+Cadet+XT1+LT42E+2"
+    ],
+    "specifications": {
+      "enginePower": "Électrique 48V",
+      "cuttingWidth": "107",
+      "fuelType": "électrique",
+      "transmission": "hydrostatique",
+      "deckType": "Acier",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Michel Wagner",
+      "email": "michel.wagner@email.com",
+      "phone": "03 88 12 34 56"
+    },
+    "postedDate": "2024-01-05T11:30:00Z",
+    "condition": "Très bon"
+  },
+  {
+    "Id": 6,
+    "title": "Toro TimeCutter MX5025 - Professionnel",
+    "brand": "Toro",
+    "model": "TimeCutter MX5025",
+    "year": 2020,
+    "price": 5200,
+    "location": "Bordeaux, Gironde",
+    "distance": 12,
+    "description": "Tracteur tondeuse Toro professionnel à rayon de braquage zéro. Parfait pour grandes surfaces et obstacles nombreux. Moteur Toro 22.5CV. Usage professionnel modéré.",
+    "images": [
+      "/api/placeholder/800/600?text=Toro+TimeCutter+MX5025+1"
+    ],
+    "specifications": {
+      "enginePower": "22.5",
+      "cuttingWidth": "127",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier renforcé",
+      "wheelDrive": "Zéro turn"
+    },
+    "sellerContact": {
+      "name": "Patrick Leroy",
+      "email": "patrick.leroy@email.com",
+      "phone": "05 56 12 34 56"
+    },
+    "postedDate": "2024-01-03T13:20:00Z",
+    "condition": "Bon"
+  },
+  {
+    "Id": 7,
+    "title": "Poulan Pro P46ZX - Prix attractif",
+    "brand": "Poulan Pro",
+    "model": "P46ZX",
+    "year": 2018,
+    "price": 1200,
+    "location": "Lille, Nord",
+    "distance": 28,
+    "description": "Tracteur tondeuse Poulan Pro à prix attractif. Quelques réparations mineures effectuées. Idéal pour bricoleur ou usage occasionnel. Fonctionne bien malgré l'âge.",
+    "images": [
+      "/api/placeholder/800/600?text=Poulan+Pro+P46ZX+1",
+      "/api/placeholder/800/600?text=Poulan+Pro+P46ZX+2"
+    ],
+    "specifications": {
+      "enginePower": "20",
+      "cuttingWidth": "117",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier",
+      "wheelDrive": "Zéro turn"
+    },
+    "sellerContact": {
+      "name": "André Moreau",
+      "email": "andre.moreau@email.com",
+      "phone": "03 20 12 34 56"
+    },
+    "postedDate": "2024-01-01T08:15:00Z",
+    "condition": "Acceptable"
+  },
+  {
+    "Id": 8,
+    "title": "Troy-Bilt Pony 42X - Compact et maniable",
+    "brand": "Troy-Bilt",
+    "model": "Pony 42X",
+    "year": 2021,
+    "price": 2100,
+    "location": "Rennes, Ille-et-Vilaine",
+    "distance": 18,
+    "description": "Troy-Bilt Pony 42X compact et facile à manœuvrer. Parfait pour terrains de taille moyenne avec obstacles. Transmission manuelle robuste. Très bon état général.",
+    "images": [
+      "/api/placeholder/800/600?text=Troy-Bilt+Pony+42X+1",
+      "/api/placeholder/800/600?text=Troy-Bilt+Pony+42X+2",
+      "/api/placeholder/800/600?text=Troy-Bilt+Pony+42X+3"
+    ],
+    "specifications": {
+      "enginePower": "17.5",
+      "cuttingWidth": "107",
+      "fuelType": "essence",
+      "transmission": "manuelle",
+      "deckType": "Acier",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Isabelle Rousseau",
+      "email": "isabelle.rousseau@email.com",
+      "phone": "02 99 12 34 56"
+    },
+    "postedDate": "2023-12-28T15:40:00Z",
+    "condition": "Très bon"
+  },
+  {
+    "Id": 9,
+    "title": "Husqvarna Z246 - Zéro turn professionnel",
+    "brand": "Husqvarna",
+    "model": "Z246",
+    "year": 2019,
+    "price": 6800,
+    "location": "Nice, Alpes-Maritimes",
+    "distance": 22,
+    "description": "Husqvarna Z246 à rayon de braquage zéro, qualité professionnelle. Moteur Kohler 23CV. Parfait pour grandes surfaces et travail intensif. Entretien suivi chez concessionnaire.",
+    "images": [
+      "/api/placeholder/800/600?text=Husqvarna+Z246+1"
+    ],
+    "specifications": {
+      "enginePower": "23",
+      "cuttingWidth": "117",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier renforcé",
+      "wheelDrive": "Zéro turn"
+    },
+    "sellerContact": {
+      "name": "Laurent Fabre",
+      "email": "laurent.fabre@email.com",
+      "phone": "04 93 12 34 56"
+    },
+    "postedDate": "2023-12-25T10:00:00Z",
+    "condition": "Excellent"
+  },
+  {
+    "Id": 10,
+    "title": "John Deere D140 - Fiabilité légendaire",
+    "brand": "John Deere",
+    "model": "D140",
+    "year": 2022,
+    "price": 3600,
+    "location": "Montpellier, Hérault",
+    "distance": 35,
+    "description": "John Deere D140 avec la fiabilité légendaire de la marque. Moteur Briggs & Stratton 22CV. Transmission automatique, très confortable d'utilisation. Comme neuf.",
+    "images": [
+      "/api/placeholder/800/600?text=John+Deere+D140+1",
+      "/api/placeholder/800/600?text=John+Deere+D140+2",
+      "/api/placeholder/800/600?text=John+Deere+D140+3",
+      "/api/placeholder/800/600?text=John+Deere+D140+4",
+      "/api/placeholder/800/600?text=John+Deere+D140+5"
+    ],
+    "specifications": {
+      "enginePower": "22",
+      "cuttingWidth": "107",
+      "fuelType": "essence",
+      "transmission": "automatique",
+      "deckType": "Acier estampé",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Christine Blanc",
+      "email": "christine.blanc@email.com",
+      "phone": "04 67 12 34 56"
+    },
+    "postedDate": "2023-12-22T12:30:00Z",
+    "condition": "Excellent"
+  },
+  {
+    "Id": 11,
+    "title": "MTD Smart RG 145 - Autoportée robuste",
+    "brand": "MTD",
+    "model": "Smart RG 145",
+    "year": 2020,
+    "price": 2800,
+    "location": "Clermont-Ferrand, Puy-de-Dôme",
+    "distance": 42,
+    "description": "MTD Smart RG 145 robuste et fiable. Transmission hydrostatique, très confortable. Plateau de coupe 105cm. Bien entretenu, révision récente. Prêt à travailler.",
+    "images": [
+      "/api/placeholder/800/600?text=MTD+Smart+RG+145+1",
+      "/api/placeholder/800/600?text=MTD+Smart+RG+145+2"
+    ],
+    "specifications": {
+      "enginePower": "18.5",
+      "cuttingWidth": "105",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "François Girard",
+      "email": "francois.girard@email.com",
+      "phone": "04 73 12 34 56"
+    },
+    "postedDate": "2023-12-20T09:45:00Z",
+    "condition": "Bon"
+  },
+  {
+    "Id": 12,
+    "title": "Craftsman DGS 6500 - Grand plateau 165cm",
+    "brand": "Craftsman",
+    "model": "DGS 6500",
+    "year": 2021,
+    "price": 4200,
+    "location": "Reims, Marne",
+    "distance": 15,
+    "description": "Craftsman DGS 6500 avec grand plateau de coupe 165cm. Moteur Kohler 26CV. Idéal pour très grandes surfaces. Transmission hydrostatique. Usage professionnel léger.",
+    "images": [
+      "/api/placeholder/800/600?text=Craftsman+DGS+6500+1"
+    ],
+    "specifications": {
+      "enginePower": "26",
+      "cuttingWidth": "165",
+      "fuelType": "essence",
+      "transmission": "hydrostatique",
+      "deckType": "Acier renforcé",
+      "wheelDrive": "Arrière"
+    },
+    "sellerContact": {
+      "name": "Olivier Thomas",
+      "email": "olivier.thomas@email.com",
+      "phone": "03 26 12 34 56"
+    },
+    "postedDate": "2023-12-18T14:15:00Z",
+    "condition": "Très bon"
+  }
+]
