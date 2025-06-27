@@ -145,36 +145,59 @@
     "sellerContact": {
       "name": "Coopérative Agricole",
       "phone": "05 56 78 90 12",
-      "email": "vente@coop-agri33.fr"
+"email": "vente@coop-agri33.fr"
     },
     "postedDate": "2024-01-03T11:30:00Z",
     "featured": false
-  }
-]
+  },
+  {
+    "id": 6,
+    "title": "Tracteur compact",
+    "brand": "Generic",
+    "model": "Compact",
+    "year": 2022,
+    "price": 15000,
+    "condition": "Excellent",
+    "location": "Montpellier, Hérault (34)",
+    "distance": 22,
+    "images": [
+      "https://via.placeholder.com/800x600/10b981/ffffff?text=Tracteur+Compact+Vue+1"
+    ],
+    "description": "Tracteur compact polyvalent pour petites exploitations.",
+    "specifications": {
+      "enginePower": "25",
+      "fuelType": "Diesel",
+      "transmission": "Manuel",
+      "wheelDrive": "4x4"
+    },
+    "sellerContact": {
+      "name": "Service Agricole",
+      "email": "service@agricole.com",
       "phone": "04 67 12 34 56"
     },
     "postedDate": "2023-12-22T12:30:00Z",
-    "condition": "Excellent"
+    "featured": false
   },
   {
-    "Id": 11,
+    "id": 11,
     "title": "MTD Smart RG 145 - Autoportée robuste",
     "brand": "MTD",
     "model": "Smart RG 145",
     "year": 2020,
     "price": 2800,
-    "location": "Clermont-Ferrand, Puy-de-Dôme",
+    "condition": "Bon",
+    "location": "Clermont-Ferrand, Puy-de-Dôme (63)",
     "distance": 42,
     "description": "MTD Smart RG 145 robuste et fiable. Transmission hydrostatique, très confortable. Plateau de coupe 105cm. Bien entretenu, révision récente. Prêt à travailler.",
     "images": [
-      "/api/placeholder/800/600?text=MTD+Smart+RG+145+1",
-      "/api/placeholder/800/600?text=MTD+Smart+RG+145+2"
+      "https://via.placeholder.com/800x600/f97316/ffffff?text=MTD+Smart+RG+145+Vue+1",
+      "https://via.placeholder.com/800x600/f97316/ffffff?text=MTD+Smart+RG+145+Vue+2"
     ],
     "specifications": {
       "enginePower": "18.5",
       "cuttingWidth": "105",
-      "fuelType": "essence",
-      "transmission": "hydrostatique",
+      "fuelType": "Essence",
+      "transmission": "Hydrostatique",
       "deckType": "Acier",
       "wheelDrive": "Arrière"
     },
@@ -184,26 +207,27 @@
       "phone": "04 73 12 34 56"
     },
     "postedDate": "2023-12-20T09:45:00Z",
-    "condition": "Bon"
+    "featured": false
   },
   {
-    "Id": 12,
+    "id": 12,
     "title": "Craftsman DGS 6500 - Grand plateau 165cm",
     "brand": "Craftsman",
     "model": "DGS 6500",
     "year": 2021,
     "price": 4200,
-    "location": "Reims, Marne",
+    "condition": "Très bon",
+    "location": "Reims, Marne (51)",
     "distance": 15,
     "description": "Craftsman DGS 6500 avec grand plateau de coupe 165cm. Moteur Kohler 26CV. Idéal pour très grandes surfaces. Transmission hydrostatique. Usage professionnel léger.",
     "images": [
-      "/api/placeholder/800/600?text=Craftsman+DGS+6500+1"
+      "https://via.placeholder.com/800x600/06b6d4/ffffff?text=Craftsman+DGS+6500+Vue+1"
     ],
     "specifications": {
       "enginePower": "26",
       "cuttingWidth": "165",
-      "fuelType": "essence",
-      "transmission": "hydrostatique",
+      "fuelType": "Essence",
+      "transmission": "Hydrostatique",
       "deckType": "Acier renforcé",
       "wheelDrive": "Arrière"
     },
@@ -213,6 +237,6 @@
       "phone": "03 26 12 34 56"
     },
     "postedDate": "2023-12-18T14:15:00Z",
-    "condition": "Très bon"
+    "featured": false
   }
 ]
