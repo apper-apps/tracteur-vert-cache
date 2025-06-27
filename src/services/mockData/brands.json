@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "name": "John Deere",
+    "country": "États-Unis",
+    "foundedYear": 1837,
+    "description": "Leader mondial dans la fabrication d'équipements agricoles, forestiers et de construction.",
+    "logoUrl": "https://images.unsplash.com/photo-1574650770011-70d5b1b25b4d?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.deere.com",
+    "specialties": ["Tracteurs", "Moissonneuses", "Équipements forestiers"]
+  },
+  {
+    "Id": 2,
+    "name": "Massey Ferguson",
+    "country": "Canada",
+    "foundedYear": 1953,
+    "description": "Marque emblématique de tracteurs agricoles reconnue mondialement.",
+    "logoUrl": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.masseyferguson.com",
+    "specialties": ["Tracteurs", "Moissonneuses", "Équipements fenaison"]
+  },
+  {
+    "Id": 3,
+    "name": "Case IH",
+    "country": "États-Unis",
+    "foundedYear": 1985,
+    "description": "Fabricant d'équipements agricoles de haute performance.",
+    "logoUrl": "https://images.unsplash.com/photo-1587819820160-7b1fc5948de4?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.caseih.com",
+    "specialties": ["Tracteurs", "Moissonneuses", "Pulvérisateurs"]
+  },
+  {
+    "Id": 4,
+    "name": "New Holland",
+    "country": "Italie",
+    "foundedYear": 1895,
+    "description": "Constructeur d'équipements agricoles innovants et durables.",
+    "logoUrl": "https://images.unsplash.com/photo-1574650770011-70d5b1b25b4d?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.newholland.com",
+    "specialties": ["Tracteurs", "Télescopiques", "Moissonneuses"]
+  },
+  {
+    "Id": 5,
+    "name": "Fendt",
+    "country": "Allemagne",
+    "foundedYear": 1930,
+    "description": "Fabricant premium de tracteurs haute technologie.",
+    "logoUrl": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.fendt.com",
+    "specialties": ["Tracteurs", "Moissonneuses", "Équipements fourragers"]
+  },
+  {
+    "Id": 6,
+    "name": "Claas",
+    "country": "Allemagne",
+    "foundedYear": 1913,
+    "description": "Leader européen des moissonneuses-batteuses.",
+    "logoUrl": "https://images.unsplash.com/photo-1587819820160-7b1fc5948de4?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.claas.com",
+    "specialties": ["Moissonneuses", "Tracteurs", "Équipements fourragers"]
+  },
+  {
+    "Id": 7,
+    "name": "Kubota",
+    "country": "Japon",
+    "foundedYear": 1890,
+    "description": "Spécialiste des tracteurs compacts et équipements de précision.",
+    "logoUrl": "https://images.unsplash.com/photo-1574650770011-70d5b1b25b4d?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.kubota.com",
+    "specialties": ["Tracteurs compacts", "Micro-tracteurs", "Équipements de jardinage"]
+  },
+  {
+    "Id": 8,
+    "name": "Deutz-Fahr",
+    "country": "Allemagne",
+    "foundedYear": 1977,
+    "description": "Constructeur de tracteurs robustes et fiables.",
+    "logoUrl": "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.deutz-fahr.com",
+    "specialties": ["Tracteurs", "Moissonneuses", "Équipements de labour"]
+  },
+  {
+    "Id": 9,
+    "name": "Valtra",
+    "country": "Finlande",
+    "foundedYear": 1951,
+    "description": "Fabricant nordique de tracteurs adaptés aux conditions extrêmes.",
+    "logoUrl": "https://images.unsplash.com/photo-1587819820160-7b1fc5948de4?w=200&h=200&fit=crop",
+    "isActive": true,
+    "website": "https://www.valtra.com",
+    "specialties": ["Tracteurs", "Équipements forestiers", "Tracteurs spécialisés"]
+  },
+  {
+    "Id": 10,
+    "name": "Same",
+    "country": "Italie",
+    "foundedYear": 1942,
+    "description": "Constructeur italien de tracteurs pour l'agriculture de montagne.",
+    "logoUrl": "https://images.unsplash.com/photo-1574650770011-70d5b1b25b4d?w=200&h=200&fit=crop",
+    "isActive": false,
+    "website": "https://www.same-tractors.com",
+    "specialties": ["Tracteurs de montagne", "Tracteurs spécialisés", "Équipements viticoles"]
+  }
+]

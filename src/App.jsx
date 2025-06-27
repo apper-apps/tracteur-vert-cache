@@ -8,7 +8,7 @@ import PostListingPage from '@/components/pages/PostListingPage'
 import SearchResultsPage from '@/components/pages/SearchResultsPage'
 import SavedListingsPage from '@/components/pages/SavedListingsPage'
 import MessagesPage from '@/components/pages/MessagesPage'
-
+import BrandManagementPage from '@/components/pages/BrandManagementPage'
 function App() {
   return (
     <Router>
@@ -19,8 +19,9 @@ function App() {
             <Route path="/listing/:id" element={<ListingDetailPage />} />
             <Route path="/post-listing" element={<PostListingPage />} />
             <Route path="/search" element={<SearchResultsPage />} />
-            <Route path="/saved" element={<SavedListingsPage />} />
+<Route path="/saved" element={<SavedListingsPage />} />
             <Route path="/messages" element={<MessagesPage />} />
+            <Route path="/brands" element={<BrandManagementPage />} />
           </Routes>
         </Layout>
         <ToastContainer

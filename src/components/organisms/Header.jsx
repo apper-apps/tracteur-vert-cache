@@ -9,14 +9,14 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const location = useLocation()
 
-  const navigation = [
+const navigation = [
     { name: 'Parcourir', href: '/', icon: 'Grid3X3' },
     { name: 'Rechercher', href: '/search', icon: 'Search' },
     { name: 'Déposer une annonce', href: '/post-listing', icon: 'Plus' },
     { name: 'Favoris', href: '/saved', icon: 'Heart' },
-    { name: 'Messages', href: '/messages', icon: 'MessageCircle' }
+    { name: 'Messages', href: '/messages', icon: 'MessageCircle' },
+    { name: 'Gestion des marques', href: '/brands', icon: 'Settings' }
   ]
-
   const isActiveRoute = (href) => {
     if (href === '/') {
       return location.pathname === '/'
