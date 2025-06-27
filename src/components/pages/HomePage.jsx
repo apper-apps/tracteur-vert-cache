@@ -16,7 +16,7 @@ const HomePage = () => {
   const loadListings = async () => {
     try {
       setLoading(true)
-      setError(null)
+setError(null)
       const data = await listingService.getAll()
       // Show recent listings first (last 12)
       setListings(data.slice(-12).reverse())

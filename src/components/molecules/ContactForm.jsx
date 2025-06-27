@@ -60,7 +60,7 @@ const ContactForm = ({ listingId, listingTitle, onClose }) => {
     
     setLoading(true)
     
-    try {
+try {
       await contactService.sendMessage({
         listingId,
         ...formData,

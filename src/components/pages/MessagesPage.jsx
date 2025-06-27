@@ -16,7 +16,7 @@ const MessagesPage = () => {
   const loadMessages = async () => {
     try {
       setLoading(true)
-      setError(null)
+setError(null)
       const data = await contactService.getAll()
       setMessages(data)
     } catch (err) {

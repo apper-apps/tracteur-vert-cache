@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { motion } from 'framer-motion'
+import { useSelector } from 'react-redux'
 import ListingGrid from '@/components/organisms/ListingGrid'
 import Button from '@/components/atoms/Button'
 import ApperIcon from '@/components/ApperIcon'
+import { AuthContext } from '@/App'
 
 const SavedListingsPage = () => {
+  const { isAuthenticated, user } = useSelector((state) => state.user)
   const [savedListings, setSavedListings] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
-
   const loadSavedListings = async () => {
     try {
       setLoading(true)

@@ -189,8 +189,7 @@ const PostListingPage = () => {
         distance: Math.floor(Math.random() * 50), // Mock distance
         postedDate: new Date().toISOString()
       }
-      
-      const newListing = await listingService.create(listingData)
+const newListing = await listingService.create(listingData)
       
       toast.success('Votre annonce a été publiée avec succès!')
       navigate(`/listing/${newListing.Id}`)

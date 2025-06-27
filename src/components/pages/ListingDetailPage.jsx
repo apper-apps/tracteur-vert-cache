@@ -25,7 +25,7 @@ const ListingDetailPage = () => {
   const loadListing = async () => {
     try {
       setLoading(true)
-      setError(null)
+setError(null)
       const data = await listingService.getById(parseInt(id))
       setListing(data)
     } catch (err) {

@@ -39,7 +39,7 @@ const SearchResultsPage = () => {
   const loadListings = async () => {
     try {
       setLoading(true)
-      setError(null)
+setError(null)
       const data = await listingService.search(filters)
       setListings(sortListings(data, sortBy))
     } catch (err) {

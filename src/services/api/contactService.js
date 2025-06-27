@@ -1,48 +1,184 @@
-import mockMessages from '@/services/mockData/messages.json'
-
 class ContactService {
   constructor() {
-    this.messages = [...mockMessages]
+    // Initialize ApperClient
+    this.initApperClient()
+  }
+
+  initApperClient() {
+    const { ApperClient } = window.ApperSDK
+    this.apperClient = new ApperClient({
+      apperProjectId: import.meta.env.VITE_APPER_PROJECT_ID,
+      apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY
+    })
   }
 
   async getAll() {
-    await new Promise(resolve => setTimeout(resolve, 300))
-    return [...this.messages].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+    try {
+      const params = {
+        fields: [
+          { field: { Name: "Name" } },
+          { field: { Name: "Tags" } },
+          { field: { Name: "Owner" } },
+          { field: { Name: "listing_id" } },
+          { field: { Name: "sender_name" } },
+          { field: { Name: "sender_email" } },
+          { field: { Name: "sender_phone" } },
+          { field: { Name: "message" } },
+          { field: { Name: "timestamp" } }
+        ],
+        orderBy: [
+          {
+            fieldName: "timestamp",
+            sorttype: "DESC"
+          }
+        ]
+      }
+
+      const response = await this.apperClient.fetchRecords('message', params)
+      
+      if (!response.success) {
+        console.error(response.message)
+        throw new Error(response.message)
+      }
+
+      // Transform database records to expected format
+      return (response.data || []).map(record => ({
+        Id: record.Id,
+        listingId: record.listing_id,
+        senderName: record.sender_name,
+        senderEmail: record.sender_email,
+        senderPhone: record.sender_phone,
+        message: record.message,
+        timestamp: record.timestamp
+      }))
+    } catch (error) {
+      console.error("Error fetching messages:", error)
+      throw error
+    }
   }
 
   async getById(id) {
-    await new Promise(resolve => setTimeout(resolve, 200))
-    const message = this.messages.find(item => item.Id === id)
-    if (!message) {
-      throw new Error('Message non trouvé')
+    try {
+      const params = {
+        fields: [
+          { field: { Name: "Name" } },
+          { field: { Name: "Tags" } },
+          { field: { Name: "Owner" } },
+          { field: { Name: "listing_id" } },
+          { field: { Name: "sender_name" } },
+          { field: { Name: "sender_email" } },
+          { field: { Name: "sender_phone" } },
+          { field: { Name: "message" } },
+          { field: { Name: "timestamp" } }
+        ]
+      }
+
+      const response = await this.apperClient.getRecordById('message', id, params)
+      
+      if (!response.success) {
+        console.error(response.message)
+        throw new Error(response.message)
+      }
+
+      const record = response.data
+      if (!record) {
+        throw new Error('Message non trouvé')
+      }
+
+      // Transform database record to expected format
+      return {
+        Id: record.Id,
+        listingId: record.listing_id,
+        senderName: record.sender_name,
+        senderEmail: record.sender_email,
+        senderPhone: record.sender_phone,
+        message: record.message,
+        timestamp: record.timestamp
+      }
+    } catch (error) {
+      console.error(`Error fetching message with ID ${id}:`, error)
+      throw error
     }
-    return { ...message }
   }
 
   async sendMessage(messageData) {
-    await new Promise(resolve => setTimeout(resolve, 400))
-    
-    // Find highest existing Id and add 1
-    const maxId = Math.max(...this.messages.map(item => item.Id), 0)
-    const newMessage = {
-      ...messageData,
-      Id: maxId + 1
+    try {
+      // Only include Updateable fields
+      const params = {
+        records: [{
+          Name: `Message from ${messageData.senderName}`,
+          Tags: messageData.tags || "",
+          Owner: messageData.owner || null,
+          listing_id: parseInt(messageData.listingId),
+          sender_name: messageData.senderName,
+          sender_email: messageData.senderEmail,
+          sender_phone: messageData.senderPhone || "",
+          message: messageData.message,
+          timestamp: messageData.timestamp || new Date().toISOString()
+        }]
+      }
+
+      const response = await this.apperClient.createRecord('message', params)
+      
+      if (!response.success) {
+        console.error(response.message)
+        throw new Error(response.message)
+      }
+
+      if (response.results) {
+        const successfulRecords = response.results.filter(result => result.success)
+        const failedRecords = response.results.filter(result => !result.success)
+        
+        if (failedRecords.length > 0) {
+          console.error(`Failed to create ${failedRecords.length} records:${JSON.stringify(failedRecords)}`)
+          throw new Error(failedRecords[0].message || 'Failed to send message')
+        }
+        
+        const record = successfulRecords[0].data
+        return {
+          Id: record.Id,
+          listingId: record.listing_id,
+          senderName: record.sender_name,
+          senderEmail: record.sender_email,
+          senderPhone: record.sender_phone,
+          message: record.message,
+          timestamp: record.timestamp
+        }
+      }
+    } catch (error) {
+      console.error("Error sending message:", error)
+      throw error
     }
-    
-    this.messages.push(newMessage)
-    return { ...newMessage }
   }
 
   async delete(id) {
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
-    const index = this.messages.findIndex(item => item.Id === id)
-    if (index === -1) {
-      throw new Error('Message non trouvé')
+    try {
+      const params = {
+        RecordIds: [id]
+      }
+
+      const response = await this.apperClient.deleteRecord('message', params)
+      
+      if (!response.success) {
+        console.error(response.message)
+        throw new Error(response.message)
+      }
+
+      if (response.results) {
+        const successfulDeletions = response.results.filter(result => result.success)
+        const failedDeletions = response.results.filter(result => !result.success)
+        
+        if (failedDeletions.length > 0) {
+          console.error(`Failed to delete ${failedDeletions.length} records:${JSON.stringify(failedDeletions)}`)
+          throw new Error(failedDeletions[0].message || 'Failed to delete message')
+        }
+        
+        return successfulDeletions.length > 0
+      }
+    } catch (error) {
+      console.error("Error deleting message:", error)
+      throw error
     }
-    
-    this.messages.splice(index, 1)
-    return true
   }
 }
 
