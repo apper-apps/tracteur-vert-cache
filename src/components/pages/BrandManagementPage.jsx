@@ -335,21 +335,36 @@ const BrandManagementPage = () => {
                 )}
                 {brand.description && (
                   <p className="text-sm text-gray-600 line-clamp-2">
-                    {brand.description}
+{brand.description}
                   </p>
                 )}
-                {brand.specialties && brand.specialties.length > 0 && (
+                {brand.specialties && (
                   <div className="flex flex-wrap gap-1">
-                    {brand.specialties.slice(0, 3).map((specialty, index) => (
-                      <Badge key={index} variant="outline" size="xs">
-                        {specialty}
-                      </Badge>
-                    ))}
-                    {brand.specialties.length > 3 && (
-                      <Badge variant="outline" size="xs">
-                        +{brand.specialties.length - 3}
-                      </Badge>
-                    )}
+                    {(() => {
+                      // Handle specialties as either string (from database) or array
+                      const specialtiesArray = typeof brand.specialties === 'string' 
+                        ? brand.specialties.split(',').map(s => s.trim()).filter(s => s.length > 0)
+                        : Array.isArray(brand.specialties) 
+                        ? brand.specialties 
+                        : [];
+                      
+                      if (specialtiesArray.length === 0) return null;
+                      
+                      return (
+                        <>
+                          {specialtiesArray.slice(0, 3).map((specialty, index) => (
+                            <Badge key={index} variant="outline" size="xs">
+                              {specialty}
+                            </Badge>
+                          ))}
+                          {specialtiesArray.length > 3 && (
+                            <Badge variant="outline" size="xs">
+                              +{specialtiesArray.length - 3}
+                            </Badge>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
                 )}
               </div>
