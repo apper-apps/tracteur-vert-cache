@@ -169,27 +169,31 @@ const PostListingPage = () => {
     setLoading(true)
     
     try {
-      const listingData = {
-        ...formData,
+const listingData = {
+        title: formData.title,
+        brand: formData.brand,
+        model: formData.model,
         year: parseInt(formData.year),
         price: parseFloat(formData.price),
-        specifications: {
-          enginePower: formData.enginePower,
-          cuttingWidth: formData.cuttingWidth,
-          fuelType: formData.fuelType,
-          transmission: formData.transmission,
-          deckType: formData.deckType,
-          wheelDrive: formData.wheelDrive
-        },
-        sellerContact: {
-          name: formData.sellerName,
-          email: formData.sellerEmail,
-          phone: formData.sellerPhone
-        },
+        condition: formData.condition,
+        location: formData.location,
+        description: formData.description,
+        engine_power: formData.enginePower ? parseInt(formData.enginePower) : null,
+        cutting_width: formData.cuttingWidth ? parseInt(formData.cuttingWidth) : null,
+        fuel_type: formData.fuelType,
+        transmission: formData.transmission,
+        deck_type: formData.deckType,
+        wheel_drive: formData.wheelDrive,
+        seller_name: formData.sellerName,
+        seller_email: formData.sellerEmail,
+        seller_phone: formData.sellerPhone,
+        posted_date: new Date().toISOString(),
+        images: formData.images.join(','), // Convert array to comma-separated string
         distance: Math.floor(Math.random() * 50), // Mock distance
-        postedDate: new Date().toISOString()
+        featured: false
       }
-const newListing = await listingService.create(listingData)
+      
+      const newListing = await listingService.create(listingData)
       
       toast.success('Votre annonce a été publiée avec succès!')
       navigate(`/listing/${newListing.Id}`)
