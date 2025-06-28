@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "Id": 1,
     "title": "Tracteur tondeuse John Deere X350",
     "brand": "John Deere",
     "model": "X350",
@@ -30,8 +30,8 @@
     "postedDate": "2024-01-15T10:30:00Z",
     "featured": true
   },
-  {
-    "id": 2,
+{
+    "Id": 2,
     "title": "Micro-tracteur Kubota BX23S",
     "brand": "Kubota",
     "model": "BX23S",
@@ -59,8 +59,8 @@
     "postedDate": "2024-01-10T14:20:00Z",
     "featured": false
   },
-  {
-    "id": 3,
+{
+    "Id": 3,
     "title": "Tracteur agricole New Holland T6.140",
     "brand": "New Holland",
     "model": "T6.140",
@@ -90,8 +90,8 @@
     "postedDate": "2024-01-08T09:15:00Z",
     "featured": true
   },
-  {
-    "id": 4,
+{
+    "Id": 4,
     "title": "Tracteur tondeuse Husqvarna YTH18542",
     "brand": "Husqvarna",
     "model": "YTH18542",
@@ -120,8 +120,8 @@
     "postedDate": "2024-01-05T16:45:00Z",
     "featured": false
   },
-  {
-    "id": 5,
+{
+    "Id": 5,
     "title": "Tracteur Massey Ferguson 5711",
     "brand": "Massey Ferguson",
     "model": "5711",
@@ -150,8 +150,8 @@
     "postedDate": "2024-01-03T11:30:00Z",
     "featured": false
   },
-  {
-    "id": 6,
+{
+    "Id": 6,
     "title": "Tracteur compact",
     "brand": "Generic",
     "model": "Compact",
@@ -178,8 +178,8 @@
     "postedDate": "2023-12-22T12:30:00Z",
     "featured": false
   },
-  {
-    "id": 11,
+{
+    "Id": 11,
     "title": "MTD Smart RG 145 - Autoportée robuste",
     "brand": "MTD",
     "model": "Smart RG 145",
@@ -209,8 +209,8 @@
     "postedDate": "2023-12-20T09:45:00Z",
     "featured": false
   },
-  {
-    "id": 12,
+{
+    "Id": 12,
     "title": "Craftsman DGS 6500 - Grand plateau 165cm",
     "brand": "Craftsman",
     "model": "DGS 6500",
